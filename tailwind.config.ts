@@ -22,7 +22,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, require("tailwindcss-animate")],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {

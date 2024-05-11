@@ -3,7 +3,7 @@
 import { twMerge } from "tailwind-merge";
 import React from "react";
 import Image from "next/image";
-import { TracingBeam } from "../../components/ui/tracing-beam";
+import { TracingBeam } from "../../ui/tracing-beam";
 
 const ObjectivePage = () => {
   return (

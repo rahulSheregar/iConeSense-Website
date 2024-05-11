@@ -1,6 +1,6 @@
 "use client";
-import { Tabs } from "../../components/ui/tabs";
-import { HoverEffect } from "../../components/ui/card-hover-effect";
+import { Tabs } from "../../ui/tabs";
+import { HoverEffect } from "../../ui/card-hover-effect";
 import {projects} from "./projects";
 
 const Teams = () =>{

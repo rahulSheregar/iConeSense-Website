@@ -1,14 +1,14 @@
 
-import Footer from "../components/ui/footer";
-import NavUI from "../components/ui/nav-bar";
-import NewsUI from "../pages/newsbox/page";
+import Footer from "../../components/ui/footer";
+import NavUI from "../../components/ui/nav-bar";
+import {ResearchProject} from "../../components/ui/research-project";
 
 export default function NewsCollection() {
   return (
 
     <>
       <NavUI></NavUI>
-      <NewsUI></NewsUI>
+      <ResearchProject></ResearchProject>
       <br></br>
       <Footer></Footer>
     </>

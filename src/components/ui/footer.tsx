@@ -23,30 +23,34 @@ const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer style={footerStyles}>
-      <div style={isMobile ? { ...footerContentStyles, flexDirection: 'column', alignItems: 'center' } : footerContentStyles}>
-        <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
-          <h3 style={addressHeaderStyles}>/ SPONSORED BY</h3>
-          <img src="/logo.png" alt="Company Logo" style={logoStyles} />
+    <footer>
+       <div className="w-full py-12 md:py-24 lg:py-32 bg-gray-800 dark:bg-gray-800 animate-fade-in">
+        <div style={isMobile ? { ...footerContentStyles, flexDirection: 'column', alignItems: 'center' } : footerContentStyles}>
+          <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
+            <h3 style={addressHeaderStyles}>/ SPONSORED BY</h3>
+            <img src="/logo.png" alt="Company Logo" style={logoStyles} />
+          </div>
+          <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
+            <h3 style={addressHeaderStyles}>/ HOW TO REACH US</h3>
+            <p style={emailStyles}>imutissi@iit.edu</p>
+            <p>Chicago, IL 60616</p>
+          </div>
+          <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
+            <h3 style={addressHeaderStyles}>/ WHERE TO FIND US</h3>
+            <p>3201 S Dearborn St</p>
+            <p>+1 (312) 567 3808</p>
+          </div>
         </div>
-        <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
-          <h3 style={addressHeaderStyles}>/ HOW TO REACH US</h3>
-          <p style={emailStyles}>imutissi@iit.edu</p>
-          <p>Chicago, IL 60616</p>
+        <div style={backToTopStyles}>
+          <a href="#" style={backToTopLinkStyles}>↑ Back to Top</a>
         </div>
-        <div style={{ ...addressStyles, marginBottom: isMobile ? '20px' : '0' }}> {/* Add marginBottom for mobile view */}
-          <h3 style={addressHeaderStyles}>/ WHERE TO FIND US</h3>
-          <p>3201 S Dearborn St</p>
-          <p>+1 (312) 567 3808</p>
+        <div style={copyRightStyles}>
+          <p>Copyright © 2024 iConSenSe. All Rights Reserved.</p>
         </div>
-      </div>
-      <div style={backToTopStyles}>
-        <a href="#" style={backToTopLinkStyles}>↑ Back to Top</a>
-      </div>
-      <div style={copyRightStyles}>
-        <p>Copyright © 2024 iConSenSe. All Rights Reserved.</p>
       </div>
     </footer>
+   
+
   );
 };
 

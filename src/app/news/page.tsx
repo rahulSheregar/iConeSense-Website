@@ -1,7 +1,7 @@
 
-import Footer from "../components/ui/footer";
-import NavUI from "../components/ui/nav-bar";
-import NewsUI from "../pages/newsbox/page";
+import Footer from "../../components/ui/footer";
+import NavUI from "../../components/ui/nav-bar";
+import NewsUI from "../../components/pages/newsbox/page";
 
 export default function NewsCollection() {
   return (

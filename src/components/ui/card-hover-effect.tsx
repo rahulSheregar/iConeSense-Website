@@ -1,8 +1,8 @@
-import { cn } from "../../utils/cn";
+import { cn } from "../../app/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-
+import { ProfileInfo } from "./profileinfo";
 export const HoverEffect = ({
   items,
   className,
@@ -48,10 +48,8 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
+          <ProfileInfo>
+          </ProfileInfo>
         </Link>
       ))}
     </div>

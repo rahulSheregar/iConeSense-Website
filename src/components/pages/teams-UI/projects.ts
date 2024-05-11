@@ -3,7 +3,7 @@ export const projects = [
       title: "Stripe",
       description:
         "A technology company that builds economic infrastructure for the internet.",
-      link: "https://stripe.com",
+      link: "https://iconsense.iit.edu/professors/IvanMutis.jpg",
     },
     {
       title: "Netflix",
